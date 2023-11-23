@@ -10998,6 +10998,8 @@ h5,
   position: relative;
 }
 .hero-wrap .overlay {
+  -ms-touch-action: auto;
+  touch-action: auto;
   position: absolute;
   top: 0;
   left: 0;
@@ -11035,6 +11037,8 @@ h5,
 }
 .owl-carousel .owl-item {
   opacity: 0.4;
+  -ms-touch-action: auto !important;
+  touch-action: auto !important;
 }
 .owl-carousel .owl-item.active {
   opacity: 1;
@@ -12188,6 +12192,8 @@ textarea.form-control {
 .testimony-section .owl-item {
   opacity: 0.1 !important;
   margin-top: 20px;
+  -ms-touch-action: auto !important;
+  touch-action: auto !important;
 }
 .testimony-section .owl-item.center {
   padding-bottom: 30px;
