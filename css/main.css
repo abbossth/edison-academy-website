@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Nuosu+SIL&display=swap");
+
+:root {
+  --mainColor: rgb(63, 152, 135);
+  --btnColor: rgb(150, 169, 255);
+  --mainFontFamily: "Lora";
+}
+
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+div {
+  font-family: var(--mainFontFamily), sans-serif;
+}
+
+a {
+  font-size: 18px;
+  font-weight: 580;
+  letter-spacing: 1px;
+}
+
+.nw-layout {
+}
+
+.nw-layout-container {
+}
+
+.nw-logo-text {
+  font-size: 36px !important;
+  color: var(--mainColor);
+}
+
+.btn:focus {
+  box-shadow: none;
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link:hover {
+  color: var(--mainColor) !important;
+  font-weight: 590;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--mainColor);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.nw-navbar-container {
+  padding: 1.5rem 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(100px);
+  position: sticky;
+}
+
+.nw-btn-call-back {
+  border-radius: 15px;
+  padding: 0.75rem 1.5rem;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  color: #fff;
+  background-color: var(--mainColor);
+  border: none;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.nw-btn-call-back:hover {
+  background: #fff;
+  box-shadow: 0px 2px 20px 10px #97b1bf;
+  color: #000;
+}
+
+.nw-language-selection {
+  margin-right: 1rem;
+}
+
+.nw-language-selection .dropdown-menu {
+  min-width: 5rem !important;
+}
+
+/* Banner */
+.nw-banner {
+  min-height: 80vh;
+  background-color: var(--mainColor);
+}
