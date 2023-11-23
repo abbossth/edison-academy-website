@@ -66,6 +66,8 @@ main,
 nav,
 section {
   display: block;
+  -ms-touch-action: auto !important;
+  touch-action: auto !important;
 }
 
 body {
@@ -11042,6 +11044,8 @@ h5,
 }
 .owl-carousel .owl-item.active {
   opacity: 1;
+  -ms-touch-action: auto !important;
+  touch-action: auto !important;
 }
 .owl-carousel .owl-nav {
   position: absolute;
